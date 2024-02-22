@@ -1,0 +1,33 @@
+.header {
+    /* Layout Properties */
+    display: flex;
+    height: 48px;
+    padding: 0px 140px;
+    justify-content: space-between;
+    position: sticky;
+
+    /* UI Properties */
+    background: #283887 0% 0% no-repeat padding-box;
+}
+
+.header-social-media {
+    border: 1px solid black;
+    color: white;
+}
+
+.header-right-side {
+    padding: 14px 0px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.header-nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+}
