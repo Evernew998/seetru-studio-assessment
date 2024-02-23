@@ -1,0 +1,54 @@
+.flexbox-outer {
+    background: orange;
+    display: flex;
+    padding-left: 140px;
+}
+
+.flexbox-container {
+    background: grey;
+    flex-wrap: wrap;
+    display: flex;
+    padding-left: 55.8px;
+}
+
+.flexbox-container-special {
+    background: green;
+    flex-shrink: 0;
+    display: flex;
+    width: 286px;
+    padding-right: 91px;
+}
+
+.flexbox-item {
+    background: blue;
+    border: 1px solid black;
+    min-width: 334px;
+    flex-grow: 1;
+    height: 247px;
+}
+
+.flexbox-item-special {
+    background: blueviolet;
+    height: 308px;
+    width: 195px;
+}
+
+@media (max-width: 850px) {
+    .flexbox-outer {
+        flex-direction: column;
+        padding-left: 0px;
+    }
+    .flexbox-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+    .flexbox-container-special {
+        width: auto;
+        justify-content: center;
+        padding: 0px;
+    }
+    .flexbox-item-special {
+        width: 200px;
+    }
+}

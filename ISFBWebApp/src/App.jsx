@@ -2,6 +2,7 @@ import './components/css/App.css'
 import './components/css/Header.css'
 import './components/css/Navbar.css'
 import './components/css/Sitemap.css'
+import Flexbox from './components/Flexbox'
 
 const Sitemap = () => {
   return (
@@ -87,9 +88,12 @@ const Header = () => {
 const App = () => {
   return (
     <div>
-      <Header />
+      {
+        /* <Header />
       <div style={{height: '500px'}}></div>
-      <Footer />
+      <Footer />*/
+      }
+      <Flexbox />
     </div>
   )
 }
