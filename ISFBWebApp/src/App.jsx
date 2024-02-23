@@ -1,6 +1,33 @@
 import './components/css/App.css'
 import './components/css/Header.css'
 import './components/css/Navbar.css'
+import './components/css/Sitemap.css'
+
+const Sitemap = () => {
+  return (
+    <div className='sitemap'>
+      <div className='sitemap-'></div>
+      <div className='sitemap-nav-container'>
+        <div className='sitemap-nav'>
+          <div className='sitemap-nav-content'></div>
+          <div className='sitemap-nav-content'></div>
+          <div className='sitemap-nav-content'></div>
+        </div>
+        <div className='sitemap-nav'>
+          <div className='sitemap-nav-content'></div>
+          <div className='sitemap-nav-content'></div>
+          <div className='sitemap-nav-content'></div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+const Footer = () => {
+  return (
+    <Sitemap />
+  )
+}
 
 const Navbar = () => {
   return (
@@ -56,11 +83,13 @@ const Header = () => {
     </div>
   )
 }
+
 const App = () => {
   return (
     <div>
       <Header />
-      <div style={{height: '1920px'}}></div>
+      <div style={{height: '500px'}}></div>
+      <Footer />
     </div>
   )
 }
