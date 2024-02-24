@@ -1,12 +1,20 @@
 import './components/css/App.css'
 import './components/css/Header.css'
 import './components/css/Navbar.css'
-import Flexbox from './components/Flexbox'
+//import Flexbox from './components/Flexbox'
 import Sitemap from './components/Sitemap'
+import HorizontalBar from './components/HorizontalBar'
+import PolicyFooter from './components/PolicyFooter'
+import Newsletter from './components/Newsletter'
 
 const Footer = () => {
   return (
-    <Sitemap />
+    <div>
+      <Newsletter />
+      <Sitemap />
+      <HorizontalBar />
+      <PolicyFooter />
+    </div>
   )
 }
 
@@ -59,7 +67,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className='header-horizontal-bar'></div>
+      <HorizontalBar />
       <Navbar />
     </div>
   )

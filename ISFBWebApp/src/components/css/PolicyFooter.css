@@ -1,0 +1,38 @@
+.policy-footer {
+  display: flex;
+  padding: 19.5px 140px;
+  justify-content: space-between;
+  gap:15px;
+}
+
+.policy-footer p {
+  font: normal normal normal 16px/24px Poppins;
+  color: #4E4E50;
+  text-align: center;
+}
+
+.policy-links {
+  display: flex;
+  gap: 66px;
+}
+
+.policy-links a {
+  text-decoration: none;
+  font: normal normal normal 16px/24px Poppins;
+  color: #4E4E50;
+  text-align: center;
+}
+
+@media (max-width: 1500px) {
+  .policy-footer {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 19.5px 70px;
+  }
+
+  .policy-links {
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
