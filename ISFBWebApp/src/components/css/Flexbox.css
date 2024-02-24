@@ -23,7 +23,6 @@
     background: blue;
     border: 1px solid black;
     min-width: 334px;
-    flex-grow: 1;
     height: 247px;
 }
 

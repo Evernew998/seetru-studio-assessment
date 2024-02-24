@@ -24,6 +24,12 @@ const Flexbox = () => {
                 <div className="flexbox-item">
                     flexbox item 5 blablablablablabla
                 </div>
+                <div className="flexbox-item">
+                    flexbox item 6 blablablablablabla
+                </div>
+                <div className="flexbox-item">
+                    flexbox item 7 blablablablablabla
+                </div>
             </div>
         </div>
     )
