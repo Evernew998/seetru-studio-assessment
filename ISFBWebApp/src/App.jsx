@@ -6,6 +6,7 @@ import Sitemap from './components/Sitemap'
 import HorizontalBar from './components/HorizontalBar'
 import PolicyFooter from './components/PolicyFooter'
 import Newsletter from './components/Newsletter'
+import Banner from './components/Banner'
 
 const Footer = () => {
   return (
@@ -74,14 +75,24 @@ const Header = () => {
 }
 
 const App = () => {
+
+  const bannerObject = {
+    text: 'ESTABLISHMENT',
+    type: 'establishmentBanner',
+    height: '309px',
+    paddingTop: '105px',
+    paddingBottom: '104px'
+  }
+
   return (
     <div>
       {
         /* 
+        <Header />
       <div style={{height: '500px'}}></div>
       */
       }
-      <Header />
+      <Banner bannerObject={bannerObject}/>
       <Footer />
     </div>
   )

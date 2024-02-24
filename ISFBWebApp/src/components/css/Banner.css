@@ -1,0 +1,33 @@
+.banner {
+    width: 100%;
+    padding-left: 140px;
+    padding-top: 61px;
+    padding-bottom: 44px;
+}
+
+.banner h1 {
+    font: normal normal 800 71px/96px Poppins;
+    letter-spacing: 3.55px;
+    color: #FFFFFF;
+    text-shadow: 0px 5px 35px #00000029;
+}
+
+@media (max-width: 777px) {
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .banner h1 {
+        text-align: center;
+        font-size: 65px;
+    }
+}
+
+@media (max-width: 600px) {
+    .banner h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+}
