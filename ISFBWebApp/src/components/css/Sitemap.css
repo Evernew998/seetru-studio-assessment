@@ -1,12 +1,11 @@
 .sitemap {
-  background: orange;
   display: flex;
-  /* padding-left: 140px; */
+  padding-left: 140px;
   padding-top: 65.6px;
+  padding-bottom: 216.7px;
 }
 
 .company-address-container {
-    background: green;
     flex-shrink: 0;
     display: flex;
     width: 286px;
@@ -14,7 +13,6 @@
 }
 
 .company-address {
-    background: blueviolet;
     height: 308px;
     width: 195px;
     text-align: center;
@@ -23,19 +21,16 @@
 .company-address > img {
   height: 66.75px;
   width: 66.75px;
-  background: white;
   margin-bottom: 8px;
 }
 
 .company-address p {
   font: normal normal normal 11px Poppins;
   color: #FFFFFF;
-  background: aqua;
   margin-bottom: 15px;
 }
 
 .company-address address {
-  background: red;
   font: normal normal normal 16px/30px Poppins;
   text-align: left;
   color: #FFFFFF;
@@ -44,26 +39,24 @@
 
 .social-media-footer-container {
   display: flex;
-  background: darkcyan;
   height: 23.7px;
   justify-content: space-between;
 }
 
-.social-media-footer-container div {
+.social-media-footer-container a {
   background: white;
+  text-decoration: none;
 }
 
 .sitemap-nav-container {
-    background: grey;
     flex-wrap: wrap;
     display: flex;
     padding-left: 55.8px;
-    border-left: 1px solid #FFFFFF;
+    border-left: 1px solid rgb(170, 169, 169);
     gap: 36px;
 }
 
 .sitemap-nav {
-    background: blue;
     width: 298px;
 }
 
@@ -71,7 +64,6 @@
   font: normal normal 600 18px/30px Poppins;
   color: #FFFFFF;
   margin-bottom: 8.4px;
-  background: black;
 }
 
 .sitemap-nav ul {
@@ -79,10 +71,13 @@
 }
 
 .sitemap-nav li {
+  margin-bottom: 6px;
+}
+
+.sitemap-nav a {
   font: normal normal normal 16px/24px Poppins;
   color: #FFFFFF;
-  background: red;
-  margin-bottom: 6px;
+  text-decoration: none;
 }
 
 @media (max-width: 850px) {
@@ -95,7 +90,6 @@
       align-items: center;
       padding-left: 0px;
       padding-top: 20px;
-      border-top: 1px solid #FFFFFF;
       border-left: none;
   }
   .company-address-container {
@@ -105,5 +99,8 @@
   }
   .company-address {
       width: 200px;
+  }
+  .sitemap-nav {
+    text-align: center;
   }
 }
