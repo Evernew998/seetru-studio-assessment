@@ -66,10 +66,11 @@
   align-items: center;
   font: normal normal normal 16px/24px Poppins;
   color: #4E4E50;
-  padding: 0px 72px;
+  padding-left: 72px;
+  padding-right: 317px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .newsletter {
     flex-direction: column;
     justify-content: center;
@@ -81,6 +82,10 @@
   .newsletter-input-wrapper {
     width: 80%;
     height: 60px;
+  }
+  .newsletter-input-wrapper input {
+    padding-left: 72px;
+    padding-right: 222px;
   }
   .newsletter-form {
     justify-content: center;
@@ -94,12 +99,16 @@
 @media (max-width: 600px) {
   .newsletter-input-wrapper {
     flex-direction: column;
-    height: 140px;
+    height: 150px;
     gap: 15px;
     align-items: center;
+    padding-bottom: 15px;
   }
   .newsletter-input-wrapper button {
     position: static;
     border-radius: 40px;
+  }
+  .newsletter-input-wrapper input {
+    padding: 0px 72px;
   }
 }
