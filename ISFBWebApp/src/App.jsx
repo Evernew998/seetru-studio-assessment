@@ -7,6 +7,7 @@ import HorizontalBar from './components/HorizontalBar'
 import PolicyFooter from './components/PolicyFooter'
 import Newsletter from './components/Newsletter'
 import Banner from './components/Banner'
+import Contact from './components/Contact'
 
 const Footer = () => {
   return (
@@ -76,13 +77,7 @@ const Header = () => {
 
 const App = () => {
 
-  const bannerObject = {
-    text: 'ESTABLISHMENT',
-    type: 'establishmentBanner',
-    height: '309px',
-    paddingTop: '105px',
-    paddingBottom: '104px'
-  }
+  const banner = 'contactBanner'
 
   return (
     <div>
@@ -92,7 +87,8 @@ const App = () => {
       <div style={{height: '500px'}}></div>
       */
       }
-      <Banner bannerObject={bannerObject}/>
+      <Banner banner={banner}/>
+      <Contact />
       <Footer />
     </div>
   )

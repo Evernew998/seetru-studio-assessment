@@ -2,25 +2,23 @@ import contactBanner from '../assets/contact-banner.png'
 import establishmentBanner from '../assets/establishment-banner.png'
 import './css/Banner.css'
 
-const Banner = ({ bannerObject }) => {
-    let banner = contactBanner
+const Banner = ({ banner }) => {
+    let bannerType = 'banner-establishment-page'
+    let backgroundImage = establishmentBanner
+    let bannerText = 'ESTABLISHMENT'
 
-    if (bannerObject.type === 'establishmentBanner') {
-        banner = establishmentBanner
+    if (banner === 'contactBanner') {
+        bannerType = 'banner-contact-page'
+        backgroundImage = contactBanner
+        bannerText = 'CONTACT US'
     }
 
-    const style = {
-        backgroundImage: `url(${banner})`,
-        height: bannerObject.height,
-        paddingTop: bannerObject.paddingTop,
-        paddingBottom: bannerObject.paddingBottom
-    }
     return (
         <div 
-            className="banner"
-            style={style}
+            className={`banner ${bannerType}`}
+            style={{backgroundImage: `url(${backgroundImage})`}}
         >
-            <h1>{bannerObject.text}</h1>
+            <h1>{bannerText}</h1>
         </div>
     )
 }
