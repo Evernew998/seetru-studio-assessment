@@ -6,6 +6,7 @@
 .contact-container {
   background: wheat;
   display: flex;
+  justify-content: center;
 }
 
 .company-location {
@@ -53,6 +54,8 @@
   background: purple;
   padding: 56px 50px 56px 49px;
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .contact-form h2 {
@@ -64,12 +67,29 @@
 }
 
 .contact-form p {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
   margin-left: 14px;
   background: bisque;
   font: normal normal normal 16px/25px Poppins;
   letter-spacing: 0.77px;
   color: #475A76;
+}
+
+.contact-form button {
+  width: 245px;
+  height: 80px;
+  cursor: pointer;
+  align-self: center;
+  background: #283887 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 15px #5A8AE31C;
+  border-radius: 40px;
+  font: normal normal normal 16px/25px Poppins;
+  color: #FFFFFF;
+}
+
+.contact-form button:hover {
+  background: #EBB437 0% 0% no-repeat padding-box;
+  box-shadow: 0px 5px 15px #5A8AE31C;
 }
 
 .form-info-container {
@@ -78,13 +98,14 @@
   flex-direction: column;
   gap: 30px;
   margin-left: 14px;
+  margin-bottom: 38px;
 }
 
 .form-info {
   background-color: darkcyan;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 9px;
 }
 
 .form-info label {
@@ -96,4 +117,62 @@
 .form-info input {
   height: 45px;
   border: 1px solid #DAE8FC;
+}
+
+@media (max-width: 1400px) {
+  .contact {
+    padding: 70px 70px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .contact-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 70%;
+  }
+
+  .contact-form h2{
+    text-align: center;
+  }
+
+  .company-location {
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-form {
+    width: 90%;
+  }
+
+  .company-location {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 35px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-form {
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .company-location {
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .contact-form button {
+    width: 163px;
+    height: 60px;
+  }
 }
