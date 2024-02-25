@@ -7,7 +7,9 @@ import HorizontalBar from './components/HorizontalBar'
 import PolicyFooter from './components/PolicyFooter'
 import Newsletter from './components/Newsletter'
 import Banner from './components/Banner'
-import Contact from './components/Contact'
+import Profile from './components/Profile'
+//import Contact from './components/Contact'
+
 
 const Footer = () => {
   return (
@@ -24,7 +26,6 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='navbar-left-content'>
-
       </div>
       <div className='navbar-right-content'>
         <div className='main-nav'>
@@ -77,18 +78,20 @@ const Header = () => {
 
 const App = () => {
 
-  const banner = 'contactBanner'
+  const banner = ''
+  const profileCards = []
 
   return (
     <div>
       {
         /* 
         <Header />
+        <Contact />
       <div style={{height: '500px'}}></div>
       */
       }
       <Banner banner={banner}/>
-      <Contact />
+      <Profile />
       <Footer />
     </div>
   )
