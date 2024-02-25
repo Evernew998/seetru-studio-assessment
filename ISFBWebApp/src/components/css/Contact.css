@@ -1,6 +1,6 @@
 .contact {
   background: grey;
-  padding: 70px 0px;
+  padding: 70px 140px;
 }
 
 .contact-container {
@@ -47,4 +47,53 @@
   left: 0;
   top: 0;
   position: absolute;
+}
+
+.contact-form {
+  background: purple;
+  padding: 56px 50px 56px 49px;
+  width: 50%;
+}
+
+.contact-form h2 {
+  margin-bottom: 16px;
+  background: green;
+  font: normal normal bold 33px/46px Poppins;
+  letter-spacing: 1.58px;
+  color: #202B3B;
+}
+
+.contact-form p {
+  margin-bottom: 19px;
+  margin-left: 14px;
+  background: bisque;
+  font: normal normal normal 16px/25px Poppins;
+  letter-spacing: 0.77px;
+  color: #475A76;
+}
+
+.form-info-container {
+  background-color: darkgoldenrod;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 14px;
+}
+
+.form-info {
+  background-color: darkcyan;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-info label {
+  background-color: firebrick;
+  font: normal normal normal 18px/24px Poppins;
+  color: #202B3B;
+}
+
+.form-info input {
+  height: 45px;
+  border: 1px solid #DAE8FC;
 }

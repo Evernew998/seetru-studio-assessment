@@ -27,7 +27,31 @@ const Contact = () => {
             </iframe>
           </div>
         </div>
-        <form className="contact-form"></form>
+        <form className="contact-form">
+          <h2>GET IN TOUCH WITH US</h2>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
+            sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+            sed diam
+          </p>
+          <div className='form-info-container'>
+            <div className="form-info">
+              <label htmlFor="name">Full Name</label>
+              <input type="text" name='name'/>
+            </div>
+            <div className="form-info">
+              <label htmlFor="email">Email</label>
+              <input type="text" name='email'/>
+            </div>
+            <div className="form-info">
+              <label htmlFor="phone">Phone</label>
+              <input type="text" name='phone'/>
+            </div>
+            <div className="form-info">
+              <label htmlFor="Subject">Subject</label>
+              <input type="text" name='Subject'/>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   )
