@@ -1,0 +1,42 @@
+.focus-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6.57% 16.67%;
+    background-color: aqua;
+}
+
+.focus-area h2 {
+    margin-bottom: 8px;
+    font: normal normal 600 26px Poppins;
+    letter-spacing: 1.3px;
+    color: #283887;
+    text-shadow: 0px 5px 35px #00000029;
+    text-align: center;
+    background-color: beige;
+}
+
+.focus-area p {
+    margin-bottom: 4%;
+    text-align: center;
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0.77px;
+    color: #4E4E50;
+    background-color: violet;
+}
+
+.focus-area img {
+    width: 82%;
+    height: auto;
+}
+
+@media (max-width: 992px) {
+    .focus-area {
+        padding: 6.57% 6%;
+    }
+
+    .focus-area img { 
+        width: 100%;
+    }
+}
