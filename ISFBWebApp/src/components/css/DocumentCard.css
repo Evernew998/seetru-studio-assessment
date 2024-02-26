@@ -1,0 +1,38 @@
+.document-card {
+  background-color: brown;
+}
+
+.document-card-image-container {
+}
+
+.document-card-image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.document-card-text-container {
+  background-color: gray;
+  padding: 16px 29px 29px 29px;
+}
+
+.document-card-text-container h3 {
+  margin-bottom: 11px;
+  font: normal normal medium 16px/25px Poppins;
+  letter-spacing: 0.77px;
+  color: #4E4E50;
+}
+
+.document-card-text-container h4 {
+  height: 118px;
+  margin-bottom: 11px;
+  background-color: aquamarine;
+  font: normal normal 600 18px/25px Poppins;
+  letter-spacing: 0.86px;
+  color: #202B3B;
+}
+
+.document-card-text-container p {
+  font: normal normal normal 16px/20px Poppins;
+  letter-spacing: 0.77px;
+  color: #4E4E50;
+}

@@ -8,6 +8,7 @@ import PolicyFooter from './components/PolicyFooter'
 import Newsletter from './components/Newsletter'
 import Banner from './components/Banner'
 import Profile from './components/Profile'
+import Document from './components/Document'
 //import Contact from './components/Contact'
 
 
@@ -107,6 +108,7 @@ const App = () => {
       */
       }
       <Banner banner={banner}/>
+      <Document />
       <Profile profileCards={profileCards}/>
       <Footer />
     </div>

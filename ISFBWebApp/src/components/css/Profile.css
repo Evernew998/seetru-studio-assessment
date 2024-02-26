@@ -3,19 +3,16 @@
 }
 
 .profile-info-container {
-    background-color: aqua;
     display: flex;
     gap: 60px;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
 }
 
 .profile-image-container {
-    background-color: black;
     width: 534px;
 }
 
 .profile-image {
-    background-color: blueviolet;
     width: 100%;
     position: relative;
     padding-bottom: 123.5%;
@@ -23,7 +20,6 @@
 }
 
 .profile-image img {
-    background-color: red;
     height: 100%;
     width: 100%;
     left: 0;
