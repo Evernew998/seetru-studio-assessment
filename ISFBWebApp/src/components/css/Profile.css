@@ -72,6 +72,10 @@
     .profile-cards-container {
         justify-content: center;
     }
+
+    .profile-info p {
+        text-align: justify;
+    }
 }
 
 @media (max-width: 1440px) {

@@ -98,6 +98,29 @@ const App = () => {
     }
   ]
 
+  const documents = [
+    {
+      img: 'signing',
+      title: 'Articles of Agreement',
+      date: 'November 2018'
+    },
+    {
+      img: 'pointing',
+      title: 'IFSB Act 2002',
+      date: 'September 2002'
+    },
+    {
+      img: 'lawyer',
+      title: 'IFSB By-Laws',
+      date: 'November 2018'
+    },
+    {
+      img: 'guidelines',
+      title: 'Guidelines and Procedures for the Preparation of Standards/Guidelines',
+      date: 'September 2002'
+    },
+  ]
+
   return (
     <div>
       {
@@ -108,7 +131,7 @@ const App = () => {
       */
       }
       <Banner banner={banner}/>
-      <Document />
+      <Document documents={documents}/>
       <Profile profileCards={profileCards}/>
       <Footer />
     </div>

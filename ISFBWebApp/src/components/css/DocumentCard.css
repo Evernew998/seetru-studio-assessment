@@ -24,6 +24,7 @@
 
 .document-card-text-container h4 {
   height: 118px;
+  max-width: 295px;
   margin-bottom: 11px;
   background-color: aquamarine;
   font: normal normal 600 18px/25px Poppins;
@@ -35,4 +36,16 @@
   font: normal normal normal 16px/20px Poppins;
   letter-spacing: 0.77px;
   color: #4E4E50;
+}
+
+@media (max-width: 600px) {
+  .document-card-text-container h4 {
+    height: 69px;
+  }
+}
+
+@media (max-width: 466px) {
+  .document-card-text-container h4 {
+    font-size: 12px;
+  }
 }

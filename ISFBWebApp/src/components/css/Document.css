@@ -1,6 +1,5 @@
 .document {
-  padding: 70.5px;
-  padding-left: 140px;
+  padding: 70.5px 140px;
 }
 
 .document h2 {
@@ -23,5 +22,38 @@
   padding: 32px 50px 0px 50px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 42.5px;
+}
+
+@media (max-width: 1128px) {
+  .document {
+    padding: 70.5px 120px;
+  }
+}
+
+@media (max-width: 700px) {
+  .document {
+    padding: 70.5px 70.5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .document-cards {
+    padding-top: 32px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 450px) {
+  .document {
+    padding: 35.5px 35.5px;
+  }
+}
+
+@media (max-width: 392px) {
+  .document h2 {
+    text-align: center;
+  }
 }
