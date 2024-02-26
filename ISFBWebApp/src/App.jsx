@@ -79,7 +79,23 @@ const Header = () => {
 const App = () => {
 
   const banner = ''
-  const profileCards = []
+  const profileCards = [
+    {
+      durationYear: '2018- Current',
+      name: 'Dr. Bello Lawal Danbatta',
+      durationMonth: 'January 2018 - Current'
+    },
+    {
+      durationYear: '2011 - 2017',
+      name: 'Jaseem Ahmed',
+      durationMonth: 'May 2011 - April 2017'
+    },
+    {
+      durationYear: '2003 - 2011',
+      name: 'Professor Datuk Rifaat Ahmed Abdel Karim',
+      durationMonth: 'March 2003 - April 2011'
+    }
+  ]
 
   return (
     <div>
@@ -91,7 +107,7 @@ const App = () => {
       */
       }
       <Banner banner={banner}/>
-      <Profile />
+      <Profile profileCards={profileCards}/>
       <Footer />
     </div>
   )

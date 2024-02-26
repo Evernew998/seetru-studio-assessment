@@ -1,14 +1,65 @@
 .profile {
-    background-color: grey;
     padding: 70px 140px 49px 140px;
 }
 
+.profile-info-container {
+    background-color: aqua;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 49px;
+}
+
+.profile-image-container {
+    background-color: black;
+    width: 534px;
+}
+
+.profile-image {
+    background-color: blueviolet;
+    width: 100%;
+    position: relative;
+    padding-bottom: 123.5%;
+    margin-top: 46px;
+}
+
+.profile-image img {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+.profile-info {
+    width: 63.78%;
+}
+
+.profile-info h2 {
+    margin-bottom: 3px;
+    font: normal normal 600 26px Poppins;
+    letter-spacing: 1.3px;
+    color: #283887;
+    text-shadow: 0px 5px 35px #00000029;
+}
+
+.profile-info h3 {
+    margin-bottom: 16px;
+    font: normal normal bold 26px/35px Poppins;
+    letter-spacing: 1.3px;
+    color: #202B3B;
+}
+
+.profile-info p {
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0.77px;
+    color: #4E4E50;
+}
+
 .profile-cards {
-    background-color: beige;
 }
 
 .profile-cards-container {
-    background-color: darkred;
     display: flex;
     gap: 29px;
     flex-wrap: wrap;
@@ -16,7 +67,6 @@
 
 .profile-cards h3 {
     margin-bottom: 49px;
-    background-color: blueviolet;
     font: normal normal bold 26px/35px Poppins;
     letter-spacing: 1.3px;
     color: #202B3B;
@@ -25,5 +75,73 @@
 @media (max-width: 1513px) {
     .profile-cards-container {
         justify-content: center;
+    }
+}
+
+@media (max-width: 1440px) {
+    .profile-info-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .profile-info {
+        width: 100%;
+    }
+
+    .profile-image-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .profile {
+        padding: 35px 70px;
+    }
+
+    .profile-image-container {
+        width: 65%;
+    }
+}
+
+@media (max-width: 660px) {
+    .profile {
+        padding: 35px 35px;
+    }
+
+    .profile-image-container {
+        width: 70%;
+    }
+
+    .profile-info h2 {
+        font-size: 19.5px;
+    }
+    
+    .profile-info h3 {
+        font-size: 19.5px;
+    }
+    
+    .profile-info p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 460px) {
+    .profile-cards-container {
+        gap: 10px
+    }
+
+    .profile-cards h3 {
+        margin-bottom: 25px;
+    }
+
+    .profile-image-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 410px) {
+    .profile-cards h3 {
+        font-size: 20px;
     }
 }

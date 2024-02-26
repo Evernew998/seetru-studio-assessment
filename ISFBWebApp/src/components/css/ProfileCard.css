@@ -1,6 +1,4 @@
 .profile-card {
-    background-color: tomato;
-    max-width: 392px;
     width: 392px;
     margin-bottom: 70px;
 }
@@ -16,7 +14,6 @@
 }
 
 .profile-card-info {
-    background-color: tan;
     position: relative;
     padding-bottom: 91%;
     width: 100%;
@@ -31,7 +28,6 @@
 }
 
 .profile-card-info-text {
-    background-color: skyblue;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -42,7 +38,8 @@
 }
 
 .profile-card-info-text-container {
-    background-color: salmon;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 15px #5A8AE31C;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -53,13 +50,13 @@
 }
 
 .profile-card-info-text-container h5 {
-    font: normal normal bold 18px/16px Helvetica Neue;
+    font: normal normal bold 18px/16px Helvetica;
     letter-spacing: 0.86px;
     color: #202B3B;
 }
 
 .profile-card-info-text-container p {
-    font: normal normal normal 14px/17px Helvetica Neue;
+    font: normal normal normal 14px/17px Helvetica;
     letter-spacing: 1.4px;
     color: #4E4E50;
 }
@@ -71,5 +68,21 @@
     
     .profile-card-info-text-container p {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 410px) {
+    .profile-card-info-text-container h5 {
+        font-size: 14px;
+    }
+    
+    .profile-card-info-text-container p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 410px) {
+    .profile-card h4 {
+        font-size: 12px;
     }
 }
