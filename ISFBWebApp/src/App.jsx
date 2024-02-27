@@ -10,6 +10,7 @@ import Banner from './components/Banner'
 import Profile from './components/Profile'
 import Document from './components/Document'
 import FocusArea from './components/FocusArea'
+import Timeline from './components/Timeline'
 //import Contact from './components/Contact'
 
 
@@ -131,6 +132,7 @@ const App = () => {
       <div style={{height: '500px'}}></div>
       */
       }
+      <Timeline />
       <Banner banner={banner}/>
       <FocusArea />
       <Document documents={documents}/>

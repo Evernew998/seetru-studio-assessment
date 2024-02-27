@@ -1,5 +1,5 @@
 .document-card {
-  background-color: brown;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
 }
 
 .document-card-image-container {
@@ -11,8 +11,7 @@
 }
 
 .document-card-text-container {
-  background-color: gray;
-  padding: 16px 29px 29px 29px;
+  padding: 15px 29px 29px 29px;
 }
 
 .document-card-text-container h3 {
@@ -26,7 +25,6 @@
   height: 118px;
   max-width: 295px;
   margin-bottom: 11px;
-  background-color: aquamarine;
   font: normal normal 600 18px/25px Poppins;
   letter-spacing: 0.86px;
   color: #202B3B;
