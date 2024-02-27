@@ -11,6 +11,7 @@ import Profile from './components/Profile'
 import Document from './components/Document'
 import FocusArea from './components/FocusArea'
 import Timeline from './components/Timeline'
+import AboutSection from './components/AboutSection'
 //import Contact from './components/Contact'
 
 
@@ -132,8 +133,9 @@ const App = () => {
       <div style={{height: '500px'}}></div>
       */
       }
-      <Timeline />
       <Banner banner={banner}/>
+      <AboutSection />
+      <Timeline />
       <FocusArea />
       <Document documents={documents}/>
       <Profile profileCards={profileCards}/>
