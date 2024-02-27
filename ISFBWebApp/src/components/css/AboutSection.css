@@ -104,3 +104,40 @@
   flex-direction: column;
   gap: 21px;
 }
+
+@media (max-width: 992px) {
+  .about-section-content-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .about-section-content-graphics {
+    width: 80%;
+  }
+
+  .about-section-content-texts {
+    width: 80%;
+  }
+
+  .tabs {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-image-text-container h4 {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-image-text-container h4 {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .about-image-text-container {
+    padding: 15px;
+  }
+}

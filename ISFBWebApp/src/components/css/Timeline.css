@@ -1,5 +1,4 @@
 .timeline {
-  background-color: tomato;
   padding-bottom: 17.8%;
 }
 
@@ -8,7 +7,6 @@
 }
 
 .timeline-container h2 {
-  background-color: red;
   margin-bottom: 8px;
   font: normal normal 600 26px/38px Poppins;
   letter-spacing: 1.3px;
@@ -17,7 +15,6 @@
 }
 
 .timeline-container h3 {
-  background-color: lavender;
   margin-bottom: 16px;
   font: normal normal bold 26px/35px Poppins;
   letter-spacing: 1.3px;
@@ -25,14 +22,12 @@
 }
 
 .timeline-container p {
-  background-color: green;
   font: normal normal normal 16px/25px Poppins;
   letter-spacing: 0.77px;
   color: #FFFFFF;
 }
 
 .timeline-graphics-container {
-  background-color: aqua;
   padding-top: 3.5%;
   position: relative;
 }

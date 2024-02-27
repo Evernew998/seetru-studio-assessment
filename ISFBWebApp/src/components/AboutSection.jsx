@@ -1,7 +1,7 @@
 import './css/AboutSection.css'
 import companyImg from '../assets/company.png'
 
-const AboutSection = () => {
+const AboutSection = ({ handleClick }) => {
   return (
     <div className="about-section">
       <h2>About PSIFIs</h2>
@@ -21,11 +21,11 @@ const AboutSection = () => {
         </div>
         <div className="about-section-content-texts">
             <div className="tabs">
-              <button>Vision</button>
-              <button>Mission</button>
-              <button>Core Values</button>
-              <button>Objective</button>
-              <button>Moto</button>
+              <button onClick={handleClick}>Vision</button>
+              <button onClick={handleClick}>Mission</button>
+              <button onClick={handleClick}>Core Values</button>
+              <button onClick={handleClick}>Objective</button>
+              <button onClick={handleClick}>Moto</button>
             </div>
             <div className="tab-texts">
               <p>The mission of the IFSB is to promote the stability and 

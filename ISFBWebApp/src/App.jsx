@@ -1,18 +1,14 @@
 import './components/css/App.css'
 import './components/css/Header.css'
 import './components/css/Navbar.css'
-//import Flexbox from './components/Flexbox'
 import Sitemap from './components/Sitemap'
 import HorizontalBar from './components/HorizontalBar'
 import PolicyFooter from './components/PolicyFooter'
 import Newsletter from './components/Newsletter'
 import Banner from './components/Banner'
-import Profile from './components/Profile'
-import Document from './components/Document'
-import FocusArea from './components/FocusArea'
-import Timeline from './components/Timeline'
-import AboutSection from './components/AboutSection'
-//import Contact from './components/Contact'
+import EstablishmentPage from './components/EstablishmentPage'
+import ContactPage from './components/ContactPage'
+import { useState } from 'react'
 
 
 const Footer = () => {
@@ -51,7 +47,7 @@ const Navbar = () => {
   )
 }
 
-const Header = () => {
+const Header = ({ handleClick }) => {
   return (
     <div className='header-container'>
       <div className="header">
@@ -65,7 +61,7 @@ const Header = () => {
             <a href='' style={{marginRight: '46px'}}>E-learning</a>
             <a href='' style={{marginRight: '50px'}}>FAQ</a>
             <a href='' style={{marginRight: '45px'}}>Career</a>
-            <a href=''>Contact Us</a>
+            <a href='' onClick={handleClick} >Contact Us</a>
           </nav>
           <div className='header-language-toggle'>
             <button>EN</button>
@@ -81,8 +77,9 @@ const Header = () => {
 }
 
 const App = () => {
+  const [ page, setPage ] = useState('establishmentPage')
+  const [ banner, setBanner ] = useState('establishmentBanner')
 
-  const banner = ''
   const profileCards = [
     {
       durationYear: '2018- Current',
@@ -124,21 +121,41 @@ const App = () => {
     },
   ]
 
+  const changePage = (event) => {
+    event.preventDefault()
+
+    const newBanner = banner === 'establishmentBanner' ? 'contactBanner' : 'establishmentBanner'
+    setBanner(newBanner)
+
+    const newPage = page === 'establishmentPage' ? 'contactPage' : 'establishmentPage'
+    setPage(newPage)
+  }
+
+  const changeButtonStyle = (event) => {
+    const allButtons = event.target.parentElement.children
+
+    for (const button of allButtons) {
+      button.style.color = '#4E4E50'
+      button.style.border = 'none'
+    }
+
+    const buttonStyle = event.target.style
+    buttonStyle.borderBottom = '2px solid #EBB437'
+    buttonStyle.color = '#EBB437'
+  }
+
+  const establishmentPage = () => 
+    <EstablishmentPage documents={documents} profileCards={profileCards} handleClick={changeButtonStyle}/>
+
+  const contactPage = () =>
+    <ContactPage />
+
   return (
     <div>
-      {
-        /* 
-        <Header />
-        <Contact />
-      <div style={{height: '500px'}}></div>
-      */
-      }
+      <Header handleClick={changePage}/>
       <Banner banner={banner}/>
-      <AboutSection />
-      <Timeline />
-      <FocusArea />
-      <Document documents={documents}/>
-      <Profile profileCards={profileCards}/>
+      {page === 'establishmentPage' && establishmentPage()}
+      {page === 'contactPage' && contactPage()}
       <Footer />
     </div>
   )
